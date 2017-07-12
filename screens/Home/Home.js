@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import CardView from 'react-native-cardview'
+import { Text, View, Button, StyleSheet } from 'react-native';
 
 class Home extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Home extends React.Component {
     const { history } = this.props;
 
     return (
-      <View>
+      <View style={styles.content}>
         <Button
           onPress={() => { history.push('/sessions') }}
           title="Start"
@@ -19,5 +20,14 @@ class Home extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  content:{
+     flex:1,
+     flexDirection:'row',
+     alignItems:'center',
+     justifyContent:'center'
+  },
+})
 
 export default Home;

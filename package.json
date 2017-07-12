@@ -11,6 +11,7 @@
   "scripts": {
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
+    "link:native": "react-native link",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch"
@@ -19,11 +20,15 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expo/vector-icons": "^5.0.0",
     "expo": "^17.0.0",
-    "native-base": "^2.2.1",
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.0",
-    "react-router-native": "^4.1.1"
+    "react-native-cardview": "^1.0.4",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "react-router-native": "^4.1.1",
+    "redux": "^3.7.1",
+    "redux-actions": "^2.2.1",
+    "redux-loop": "^3.0.0"
   }
 }
